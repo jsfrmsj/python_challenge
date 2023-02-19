@@ -1,7 +1,7 @@
 import os
 import csv
 
-election_data = os.path.join("..", "Resources", "election_data.csv")
+election_data = os.path.join("Resources", "election_data.csv")
 
 with open(election_data) as csvfile:
     csvreader = csv.reader(csvfile, delimiter= ',')
@@ -48,7 +48,7 @@ print("----------------------------------")
 print(f"Winner {max(Results, key = Results.get)}")
 print("----------------------------------")
 
-output_file = os.path.join("election_results.txt")
+output_file = os.path.join("Analysis", "election_results.txt")
 
 with open(output_file, "w") as file:
 

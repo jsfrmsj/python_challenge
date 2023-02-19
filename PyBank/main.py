@@ -1,7 +1,7 @@
 import os
 import csv
 
-budget_data = os.path.join("..", "Resources", "budget_data.csv")
+budget_data = os.path.join("Resources", "budget_data.csv")
 
 with open(budget_data) as csvfile:
 
@@ -52,7 +52,7 @@ with open(budget_data) as csvfile:
     print(f"Greatest Increase in Profits:{greatest[0]} ${greatest[1]}")
     print(f"Greatest Decrease in Profits:{least[0]} ${least[1]}")
 
-output_file = os.path.join("PyBank.txt")
+output_file = os.path.join("Analysis", "PyBank.txt")
 
 with open(output_file, "w") as file:
 
